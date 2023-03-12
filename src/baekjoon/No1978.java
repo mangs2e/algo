@@ -22,15 +22,7 @@ public class No1978 {
         for(int i=0;i<T;i++) {
             flag = false;
             x = in.nextInt();
-            for(int j=1;j<x;j++) {  // j가 1이 아니고, 한번이라도 나머지가 0이 되면 소수가 아니므로 break;
-                if(j!=1 && (x%j == 0)) {
-                flag = true;
-                break;
-                }
-            }
-            if(!flag && x!=1) {
-                list.add(x);
-            }
+            flag = No2581.isFlag(list, flag, x);
         }
         System.out.println(list.size());
     }
