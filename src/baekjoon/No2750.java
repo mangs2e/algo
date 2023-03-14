@@ -19,6 +19,5 @@ public class No2750 {
         for(Integer k:list) {
             System.out.println(k);
         }
-
     }
 }
