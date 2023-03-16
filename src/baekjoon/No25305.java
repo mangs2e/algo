@@ -25,6 +25,7 @@ public class No25305 {
         }
         Collections.sort(list);
         Collections.reverse(list);
+        //역순정렬
 
         System.out.println(list.get(k-1));
     }
