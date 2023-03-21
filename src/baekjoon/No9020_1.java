@@ -21,10 +21,6 @@ public class No9020_1 {
         List<Integer> list = new ArrayList<>();
         boolean[] flag = new boolean[10001];
 
-//        for (int i = 0; i < flag.length; i++) {
-//            flag[i] = true;
-//        }
-//        System.out.println(flag[4]);
         //소수면 false;
         flag[0]=flag[1]=true;
         for(int i=2; i*i<flag.length; i++){
@@ -38,10 +34,6 @@ public class No9020_1 {
             if(flag[i]==false) list.add(i);
         }
 
-//        for (int i = 0; i < list.size(); i++) {
-//            System.out.println(list.get(i));
-//        }
-//        System.out.println(list.size());
 
         int T = Integer.parseInt(in.readLine());
 
@@ -60,18 +52,14 @@ public class No9020_1 {
                         n1 = list.get(i);
                         n2 = list.get(j);
                         gap = n2 - n1;
-                        if(gap<0) {
-                        gap *= (-1);
-                    }
-                    if(gap<min) {
-                        n1 = list.get(i);
-                        n2 = list.get(j);
-                        min = gap;
-                    }
+                        if(gap<min) {
+                            n1 = list.get(i);
+                            n2 = list.get(j);
+                            min = gap;
+                        }
                     }
                 }
             }
-//            System.out.println(n1 + " " + n2);
             bw.write(n1+" "+n2+"\n");
             bw.flush();
         }
