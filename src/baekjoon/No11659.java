@@ -29,5 +29,7 @@ public class No11659 {
             System.out.println(S[j] - S[i-1]);
         }
 
+        br.close();
+
     }
 }
