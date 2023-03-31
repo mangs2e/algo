@@ -17,9 +17,10 @@ public class No11286 {
             int firstN = Math.abs(o1);
             int sencondN = Math.abs(o2);
             if(firstN == sencondN) {
-                return o1 > o2 ? 1 : -1;
+                return o1 > o2 ? 1 : -1; //절대값이 같으면 음수 우선 정렬
             }else {
-                return firstN > sencondN? 1 : -1;
+                return firstN > sencondN? 1 : -1; //절대값을 기준으로 정렬
+                //return firstN - secondN;
             }
         });
         int x;
