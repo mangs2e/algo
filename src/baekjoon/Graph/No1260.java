@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.Graph;
 
 
 import java.io.BufferedReader;
