@@ -1,4 +1,4 @@
-package baekjoon.Graph;
+package baekjoon.search;
 
 import java.io.BufferedReader;
 import java.io.IOException;
