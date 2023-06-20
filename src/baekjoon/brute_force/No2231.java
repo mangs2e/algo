@@ -1,4 +1,4 @@
-package baekjoon;
+package baekjoon.brute_force;
 
 import java.util.Scanner;
 
