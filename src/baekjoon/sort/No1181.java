@@ -15,6 +15,7 @@ public class No1181 {
             String str = br.readLine();
             map.put(str, str.length());
         }
+        
         List<Map.Entry<String, Integer>> entryList = new LinkedList<>(map.entrySet());
         entryList.sort(Map.Entry.comparingByValue());
 
