@@ -1,4 +1,4 @@
-package baekjoon.brute_force;
+package baekjoon.sort;
 
 import java.io.BufferedReader;
 import java.io.IOException;
