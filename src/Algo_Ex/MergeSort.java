@@ -47,7 +47,7 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {3, 9, 4, 7, 5, 0, 1, 6, 8, 2};
+        int[] arr = {4, 5, 1, 3, 2};
         printArray(arr);
         mergeSort(arr);
         printArray(arr);
