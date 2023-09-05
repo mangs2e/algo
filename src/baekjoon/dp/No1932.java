@@ -41,7 +41,6 @@ public class No1932 {
         for (int i = 1; i < sum.length; i++) {
             for (int j = 0; j <= i; j++) {
                 if(j == 0) sum[i][j] = sum[i - 1][j] + sum[i][j];
-                else if(j == i) sum[i][j] = sum[i - 1][j - 1] + sum[i][j];
                 else sum[i][j] = Math.max(sum[i - 1][j - 1], sum[i - 1][j]) + sum[i][j];
             }
         }
