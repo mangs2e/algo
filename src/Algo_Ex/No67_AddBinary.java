@@ -1,7 +1,6 @@
 package Algo_Ex;
 
 import java.math.BigInteger;
-import java.util.Arrays;
 
 public class No67_AddBinary {
     public static void main(String[] args) {
