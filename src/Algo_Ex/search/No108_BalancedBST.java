@@ -1,4 +1,4 @@
-package Algo_Ex.stack;
+package Algo_Ex.search;
 
 public class No108_BalancedBST {
     public static class TreeNode {
