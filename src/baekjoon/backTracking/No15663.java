@@ -23,14 +23,14 @@ public class No15663 {
         }
 
         Arrays.sort(arr);
-        combine(new ArrayList<>(), M);
+        combine(new boolean[N], new int[N], 0, M);
         System.out.println(sb);
     }
 
-    private static void combine(ArrayList<Integer> list, int m) {
-        if (m == 0) {
+    private static void combine(boolean[] visited, int[] selected, int depth, int m) {
+        if (depth == m) {
             StringBuilder str = new StringBuilder();
-            for (int k : list) {
+            for (int k : selected) {
                 str.append(arr[k]).append(" ");
             }
             if (!set.contains(str.toString())) {
@@ -41,12 +41,12 @@ public class No15663 {
         }
 
         for (int i = 0; i < arr.length; i++) {
-            if (list.contains(i)) {
-                continue;
+            if (!visited[i]) {
+                visited[i] = true;
+                selected[depth] = i;
+                combine(visited, selected, depth + 1, m);
+                visited[i] = false;
             }
-            list.add(i);
-            combine(list, m - 1);
-            list.remove(list.size() - 1);
         }
     }
 }
